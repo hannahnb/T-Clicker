@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
+    <title>T-Clicker Game</title>
+</head>
+	<body>
+		<div class="grid-container">
+			<div id="Tbox">
+				<img id="TClick" onclick='clicked()' src="assets/T.png" alt="T">
+				<h6 class="button" id="score">T Points: 0</h6>
+				<h6 class="button" onclick='unlockBuilding()' id="pointsNeeded">Unlock Fitten Hall! (10)</h6>
+			</div>
+			<div id="midMap">
+				<h1>T-CLICKER</h1>
+				<img id="map" src="All Maps/map 1.png" width="90%" alt="map">
+			</div>
+			<div id="upgradesAndBuildings">
+				<h2>UPGRADES</h2>
+				<ul>
+					<li><a id="x2" onclick='buyUpgrade("x2")'>X2 MULTIPLIER (20)</a></li>
+					<li><a id="wallpaper" onclick='buyUpgrade("Wallpaper")'>BUY WALLPAPER (40)</a></li>
+					<li><a id="friends" onclick='buyUpgrade("friends")'>MORE FRIENDS (30)</a></li>
+				</ul>
+				<h2>BUILDINGS</h2>
+				<ul>
+					<li><a onclick='unlockBuilding()'><img id="1" src="assets/gold lock.png" alt="Gold lock"> FITTEN RESIDENCE HALL </a></li>
+					<li><a onclick='unlockBuilding()'><img id="2" src="assets/gold lock.png" alt="Gold lock"> WEST VILLAGE </a></li>
+					<li><a onclick='unlockBuilding()'><img id="4" src="assets/gold lock.png" alt="Gold lock"> STAMPS HEALTH SERVICES </a></li>
+					<li><a onclick='unlockBuilding()'><img id="7" src="assets/gold lock.png" alt="Gold lock"> INSTRUCTIONAL CENTER </a></li>
+					<li><a onclick='unlockBuilding()'><img id="8" src="assets/gold lock.png" alt="Gold lock"> EXHIBITION HALL </a></li>
+					<li><a onclick='unlockBuilding()'><img id="10" src="assets/gold lock.png" alt="Gold lock"> STUDENT CENTER </a></li>
+					<li><a onclick='unlockBuilding()'><img id="11" src="assets/gold lock.png" alt="Gold lock"> COLLEGE OF COMPUTING </a></li>
+					<li><a onclick='unlockBuilding()'><img id="12" src="assets/gold lock.png" alt="Gold lock"> KLAUS ADVANCED COMPUTING BUILDING </a></li>
+					<li><a onclick='unlockBuilding()'><img id="13" src="assets/gold lock.png" alt="Gold lock"> RUSS CHANDLER STADIUM </a></li>
+					<li><a onclick='unlockBuilding()'><img id="14" src="assets/gold lock.png" alt="Gold lock"> PETERS PARKING DECK </a></li>
+					<li><a onclick='unlockBuilding()'><img id="15" src="assets/gold lock.png" alt="Gold lock"> NORTH AVENUE DINING </a></li>
+					<li><a onclick='unlockBuilding()'><img id="18" src="assets/gold lock.png" alt="Gold lock"> NORTH AVENUE APARTMENTS </a></li>
+					<li><a onclick='unlockBuilding()'><img id="19" src="assets/gold lock.png" alt="Gold lock"> BOBBY DODD STADIUM </a></li>
+					<li><a onclick='unlockBuilding()'><img id="20" src="assets/gold lock.png" alt="Gold lock"> TECH TOWER </a></li>
+				</ul>
+			</div>
+		</div>
+
+    </body>
+</html>
